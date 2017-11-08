@@ -40,5 +40,5 @@ def turn(board)
     else break
     end
   end
-      
+
 end
