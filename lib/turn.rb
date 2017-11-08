@@ -34,7 +34,7 @@ def turn(board)
   index = gets.strip
   index = input_to_index(index)
   valid_move?(board, index)
-  until valid_move? == true
+  until valid_move?(board, index) == true
     turn(board)
   end
 end
