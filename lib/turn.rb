@@ -37,5 +37,6 @@ def turn(board)
   if validation == false
     turn(board)
   end
+  move(board, index, token)
 
 end
