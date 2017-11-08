@@ -33,9 +33,9 @@ def turn(board)
   puts "Please enter 1-9:"
   index = gets.strip
   index = input_to_index(index)
-  validation = false
+  validation = valid_move?(board, index)
   loop do
-    if valid_move?(board, index) == false
+    if validation == false
       turn(board)
     else break
     end
