@@ -34,9 +34,5 @@ def turn(board)
   index = gets.strip
   index = input_to_index(index)
   validation = valid_move?(board, index)
-  if validation == false
-    turn(board)
-  else move(board, index, token)
-  end
 
 end
