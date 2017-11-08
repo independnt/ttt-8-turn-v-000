@@ -34,9 +34,10 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   validation = valid_move?(board, index)
-  if validation == false
+  if validation 
+    move(board, index, "X")
+  else  
     turn(board)
   end
-  move(board, index, "X")
   display_board(board)
 end
